@@ -1,0 +1,69 @@
+:root {
+  --black-color: #000000;
+  --grey-color: #dadada;
+}
+
+body {
+  text-transform: lowercase;
+  font-weight: 900;
+}
+
+.main_wrapper {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.default_font20px {
+  font-size: 20px;
+}
+
+// left side comp
+.left_side_wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//right side comp
+.right_side_wrapper {
+  width: 600px;
+}
+
+// post name comp
+.post_name {
+  color: var(--grey-color);
+  transition: 0.15s;
+  user-select: none;
+}
+
+.post_name:active {
+  color: var(--black-color);
+  margin-left: 80px;
+}
+
+//link
+.link_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 660px;
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 16px;
+  color: var(--black-color);
+  background-color: var(--grey-color);
+}
+
+.telegram_link {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  display: flex;
+  margin-left: 10px;
+}
+
+//right side
