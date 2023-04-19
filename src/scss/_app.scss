@@ -5,7 +5,8 @@
 
 body {
   text-transform: lowercase;
-  font-weight: 900;
+  font-weight: 600;
+  letter-spacing: normal;
 }
 
 .main_wrapper {
@@ -67,3 +68,14 @@ body {
 }
 
 //right side
+
+//post description
+.post_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 64px;
+  font-weight: 900;
+}

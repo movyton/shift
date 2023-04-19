@@ -1,14 +1,14 @@
 [
   {
-    "id": 1,
-    "name": "Maison kitsune x and wander ss23",
-    "content": "Maison kitsune x and wander ss23 Maison kitsune x and wander ss23Maison kitsune x and wander ss23Maison kitsune x and wander ss23",
-    "imgs": ["./imgs/nowhere.jpg"]
+    "id": 0,
+    "title": "Maison kitsune x and wander ss23",
+    "content": "“NOWHERE”. На самом деле история достойная документалки. Магазин открыли Ниго и Такахаши, чтобы иметь площадку для продажи своей одежды + распространять по Японии одежду западных брендов по типу Supreme/Stussy.",
+    "imgs": ["/assets/img/nowhere.jpg", "/assets/img/nowhere.jpg"]
   },
   {
-    "id": 2,
-    "name": "nowhere",
+    "id": 1,
+    "title": "nowhere",
     "content": "“NOWHERE”. На самом деле история достойная документалки. Магазин открыли Ниго и Такахаши, чтобы иметь площадку для продажи своей одежды + распространять по Японии одежду западных брендов по типу Supreme/Stussy.",
-    "imgs": []
+    "imgs": ["/assets/img/nowhere.jpg", "/assets/img/nowhere.jpg"]
   }
 ]

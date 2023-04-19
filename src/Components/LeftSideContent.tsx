@@ -1,10 +1,9 @@
-import React from "react";
 import PostName from "./PostName";
 import Link from "./Link";
 
 interface PostProp {
   id: number;
-  name: string;
+  title: string;
   content: string;
   imgs: string[];
 }
@@ -12,13 +11,13 @@ interface Props {
   data: PostProp[];
 }
 
-function LeftSideContent({ data }: Props, changePostId: () => void) {
+function LeftSideContent({ data }: Props) {
   return (
     <div className="left_side_wrapper default_font20px">
       <div className="posts_name">
-        {data.map((post: PostProp) => (
-          <PostName key={post.id} name={post.name} id={post.id} changePostId={changePostId} />
-        ))}
+        {data.map((post: PostProp) => {
+          return <PostName key={post.id} name={post.title} id={post.id} />;
+        })}
       </div>
       <div className="link">
         <Link />
