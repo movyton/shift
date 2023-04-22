@@ -1,18 +1,14 @@
-import { usePostIdProvider } from "./context/postIdContext";
-
-interface PropName {
+interface Props {
   name: string;
-  id: number;
+  changePostId: any;
 }
 
-function PostName({ name, id }: PropName) {
-  const postIdContext = usePostIdProvider();
-
+const PostName = ({ name, changePostId }: Props) => {
   return (
-    <div className="post_name" onClick={() => postIdContext?.setCurrentPostId(id)}>
+    <div className="post_name" onClick={changePostId}>
       {name}
     </div>
   );
-}
+};
 
 export default PostName;

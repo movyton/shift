@@ -1,3 +1,4 @@
+import { usePostIdProvider } from "./context/postIdContext";
 import PostName from "./PostName";
 import Link from "./Link";
 
@@ -5,18 +6,26 @@ interface PostProp {
   id: number;
   title: string;
   content: string;
-  imgs: string[];
+  imgs: object[];
 }
 interface Props {
   data: PostProp[];
 }
 
-function LeftSideContent({ data }: Props) {
+const LeftSideContent = ({ data }: Props) => {
+  const postIdContext = usePostIdProvider();
+
+  const changePostId = (newId: number) => {
+    postIdContext?.setCurrentPostId(newId);
+  };
+
   return (
     <div className="left_side_wrapper default_font20px">
       <div className="posts_name">
         {data.map((post: PostProp) => {
-          return <PostName key={post.id} name={post.title} id={post.id} />;
+          return (
+            <PostName key={post.id} name={post.title} changePostId={() => changePostId(post.id)} />
+          );
         })}
       </div>
       <div className="link">
@@ -24,6 +33,6 @@ function LeftSideContent({ data }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default LeftSideContent;

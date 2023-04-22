@@ -1,4 +1,2 @@
 1) при клике на название поста должно холдить тему (черный цвет + марджин лефт)!
-2) font SUISSE int
 3) ispravit strelockru linka. (mojet font pofixit)
-4) perepisat vse na arrow func`s

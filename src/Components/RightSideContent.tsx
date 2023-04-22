@@ -4,7 +4,7 @@ import { usePostIdProvider } from "./context/postIdContext";
 
 import dataJSON from "../data.json";
 
-function RightSideContent() {
+const RightSideContent = () => {
   const postIdContext = usePostIdProvider();
   const currentPost = dataJSON.filter((post) => post.id === postIdContext?.currentPostId);
 
@@ -12,10 +12,10 @@ function RightSideContent() {
 
   return (
     <div className="right_side_wrapper default_font20px">
-      <Slider />
+      <Slider imgs={imgs} />
       <PostDescription id={id} title={title} content={content} />
     </div>
   );
-}
+};
 
 export default RightSideContent;

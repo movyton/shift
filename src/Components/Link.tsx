@@ -4,7 +4,7 @@ const Link = () => {
   return (
     <div className="link_wrapper">
       <span>shift</span>
-      <a href="" className="telegram_link">
+      <a href="https://t.me/iamshift" className="telegram_link">
         <span>telegram channel</span>
         <div className="arrow">
           <svg

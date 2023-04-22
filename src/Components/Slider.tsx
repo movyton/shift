@@ -1,19 +1,23 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import PostPictures from "../data.json";
 import "swiper/css";
 
-const Slider = () => {
-  const pic = PostPictures[0].imgs[0];
+interface ImgProp {
+  imgId: number;
+  imgSrc: string;
+}
 
+interface Props {
+  imgs: ImgProp[];
+}
+
+const Slider = ({ imgs }: Props) => {
   return (
-    <Swiper spaceBetween={0} slidesPerView={1}>
-      <SwiperSlide>
-        <img src={pic} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={pic} alt="" />
-      </SwiperSlide>
+    <Swiper spaceBetween={20} slidesPerView={1}>
+      {imgs.map((img) => (
+        <SwiperSlide key={img.imgId}>
+          <img src={img.imgSrc} alt="" />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
