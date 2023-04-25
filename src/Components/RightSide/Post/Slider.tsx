@@ -12,7 +12,7 @@ interface Props {
 
 const Slider = ({ imgs }: Props) => {
   return (
-    <Swiper spaceBetween={20} slidesPerView={1}>
+    <Swiper spaceBetween={10} slidesPerView={1}>
       {imgs.map((img) => (
         <SwiperSlide key={img.imgId}>
           <img src={img.imgSrc} alt="" />

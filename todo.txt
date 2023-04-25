@@ -1,2 +1,0 @@
-1) при клике на название поста должно холдить тему (черный цвет + марджин лефт)!
-3) ispravit strelockru linka. (mojet font pofixit)

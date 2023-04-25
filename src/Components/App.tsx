@@ -1,5 +1,5 @@
-import LeftSideContent from "./LeftSideContent";
-import RightSideContent from "./RightSideContent";
+import LeftSideContent from "./LeftSide/LeftSideContent";
+import RightSideContent from "./RightSide/RightSideContent";
 import dataJSON from "../data.json";
 import { PostIdProvider } from "./context/postIdContext";
 import "../scss/_app.scss";

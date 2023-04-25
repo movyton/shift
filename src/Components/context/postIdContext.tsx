@@ -12,7 +12,7 @@ interface Child {
 const PostId = createContext<null | PostIdType>(null);
 
 export const PostIdProvider = ({ children }: Child) => {
-  const [currentPostId, setCurrentPostId] = useState(1);
+  const [currentPostId, setCurrentPostId] = useState(0);
 
   return <PostId.Provider value={{ currentPostId, setCurrentPostId }}>{children}</PostId.Provider>;
 };

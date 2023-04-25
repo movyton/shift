@@ -1,0 +1,24 @@
+.right_side_wrapper {
+  width: 50%;
+}
+
+.post_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.header {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.description {
+  margin-left: 3em;
+  text-indent: -3em;
+  padding-top: 32px;
+}
+
+.description:nth-child(2) {
+  padding-top: 0px;
+}
