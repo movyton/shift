@@ -1,3 +1,5 @@
 # shifted
 
-emulation
+git clone
+npm i
+npm start
