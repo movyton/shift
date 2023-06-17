@@ -6,9 +6,15 @@ import "../../scss/right_side.css";
 
 const RightSideContent = () => {
   const postIdContext = usePostIdProvider();
-  const currentPost = dataJSON.filter((post) => post.id === postIdContext?.currentPostId);
+  const currentPost = dataJSON.find((post: any) => post.id === postIdContext?.currentPostId);
 
-  const { title, content, imgs } = currentPost[0];
+  const isUndefinedPost = (post: any) => {
+    if (post) {
+      return post;
+    }
+  };
+
+  const { imgs, title, content } = isUndefinedPost(currentPost);
 
   return (
     <div className="right_side_wrapper default_font20px">

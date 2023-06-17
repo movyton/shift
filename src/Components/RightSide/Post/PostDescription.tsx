@@ -4,8 +4,6 @@ interface Prop {
 }
 
 const PostDescription = ({ title, content }: Prop) => {
-  console.log(content);
-
   return (
     <>
       <div className="post_container">
